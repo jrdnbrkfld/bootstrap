@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -50,20 +50,23 @@
         </div>
         <!--</div>-->
     </nav>
-    <article class="container mt-3">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6!
-                    <a href="">See here for more details</a>
-                </div>
-            </div>
-        </div>
+    <!--<div class="container alert-container">-->
+    <!--    <div class="row d-none d-sm-block">-->
+    <!--        <div class="col-12">-->
+    <!--            <div class="alert alert-warning">-->
+    <!--                <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <div class="container-fluid callout-container">
         <!-- Callout -->
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
@@ -75,9 +78,11 @@
                 </section>
             </div>
         </div>
-        <!-- /.callout -->
-        <hr>
-        <!-- Quotes -->
+    </div>
+    <!-- /.callout -->
+
+    <!-- Quotes -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
@@ -89,7 +94,7 @@
                 <div class="col-12 col-md-6">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="assets/images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
                         </div>
                         <div class="media-body">
                             <blockquote class="blockquote">
@@ -104,7 +109,7 @@
                 <div class="col-12 col-md-6">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="assets/images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
                         </div>
                         <div class="media-body">
                             <blockquote class="blockquote">
@@ -117,9 +122,11 @@
                 </div>
             </div>
         </section>
-        <!-- /.quotes -->
-        <hr>
-        <!-- Features -->
+    </div>
+    <!-- /.quotes -->
+
+    <!-- Features -->
+    <div class="features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -158,8 +165,8 @@
                 </div>
             </div>
         </section>
-        <!-- /.features -->
-    </article>
+    </div>
+    <!-- /.features -->
 
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
